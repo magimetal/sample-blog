@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  padding: var(--spacing-1) 0;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 460px;
+  display: block;
+  padding: var(--spacing-1);
+  margin: var(--spacing-1) 0 ;
+}
+
+p {
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}

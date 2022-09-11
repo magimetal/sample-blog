@@ -1,0 +1,8 @@
+<h2>Editing a Blog Post</h2>
+<ng-container *ngIf="selectedPostId">
+  <form [formGroup]="updateForm" (ngSubmit)="onSave()">
+    <input type="text" name="title" formControlName="title"/>
+    <textarea name="text" formControlName="text"></textarea>
+    <button type="submit">Save</button> <button (click)="onCancel()">Cancel</button> <button (click)="onDelete()">Delete</button>
+  </form>
+</ng-container>

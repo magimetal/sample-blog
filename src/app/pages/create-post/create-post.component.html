@@ -1,0 +1,6 @@
+<h2>Create a Blog Post</h2>
+  <form [formGroup]="createForm" (ngSubmit)="onSave()">
+    <input type="text" name="title" formControlName="title" placeholder="Blog Title"/>
+    <textarea name="text" formControlName="text" placeholder="Blog Content"></textarea>
+    <button type="submit">Save</button>
+  </form>

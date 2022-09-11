@@ -1,0 +1,10 @@
+<ng-container *ngIf="blogPosts && blogPosts.length">
+  <div *ngFor="let blogPost of blogPosts">
+    <div class="blog-post">
+      <h2>{{ blogPost.title }}</h2>
+      <p class="right-align no-padding"><strong>Date Posted: </strong> {{ blogPost.timestamp | date: 'medium' }}</p>
+      <p class="right-align no-padding"><strong>Actions: </strong> <button (click)="editBlogPost(blogPost)">Edit Post</button></p>
+      <p [innerHTML]="blogPost.text"></p>
+    </div>
+  </div>
+</ng-container>
